@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mid-term</title>
-</head>
-<body>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajendra Sapkota</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
+</head>
+
+<body>
+  <!-- Header -->
+<nav>  <header class="mb-5 light-gray-header">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Left-aligned links -->
+        <div class="d-flex align-items-center">
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" class="me-3">HTML5</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="me-3">JavaScript</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+        </div>
+
+        <!-- Right-aligned buttons -->
+        <div class="d-flex align-items-center">
+          <div class="btn-group me-2">
+            <button class="btn btn-dark btn-sm" data-bs-theme-value="dark">Dark</button>
+          </div>
+          <div class="btn-group me-2">
+            <button class="btn btn-light btn-sm" data-bs-theme-value="light">Light</button>
+          </div>
+          <button type="button" class="btn btn-secondary btn-sm">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  </header></nav>
+
+  <!-- Main content -->
+  <main class="container">
+    <!-- First row -->
+    <div class="row mb-3">
+      <div class="col-12">
+        <h1>Online Factorial Calculator</h1>
+      </div>
+    </div>
+
+    <!-- Input row -->
+    <div class="row mb-3">
+      <div class="col-2 d-flex align-items-center justify-content-end">
+        <label for="inputNumber" class="form-label">Enter Number:</label>
+      </div>
+      <div class="col-10 d-flex align-items-center">
+        <input type="number" id="inputNumber" class="form-control" placeholder="e.g. 5" />
+      </div>
+    </div>
+
+    <!-- Button and Output row -->
+    <div class="row">
+      <div class="col-2 d-flex justify-content-end align-items-center">
+        <button class="btn btn-secondary" onclick="calculateFactorial()">Enter</button>
+      </div>
+      <div class="col-10 d-flex align-items-center">
+        <div id="output" class="output-screen p-2">
+          Output will be displayed here...
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="text-center light-gray-header mt-3 p-3">
+    &copy; Made By Rajendra Sapkota
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

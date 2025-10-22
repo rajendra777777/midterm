@@ -1,7 +1,5 @@
-$primary: red;
-
 h1 {
-  color: $primary;
+  color: red;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -16,4 +14,8 @@ h1 {
   min-height: 40px;
   width: 100%;
   background-color: #fff;
-}
+}/*# sourceMappingURL=style.css.map */
+
+
+
+
